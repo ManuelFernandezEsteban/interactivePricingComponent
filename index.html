@@ -1,78 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <main>
-    <div class="wrapper-principal">
-      <section class="wrapper-head">
-        <h2>Simple, traffic-based pricing</h2>
-        <p>Sign-up for our 30-day trial.</p>
-        <p>No credit card required.</p>
-      </section>
-      <section class="wrapper-info">
-        <h4>100 k Pageviews</h4>
-        <input class="range" type="range" name="" id="">  
-        <div class="price-month">
-          <span id="price">$</span><span class="mes">/month</span>
+    <section class="wrapper-head">
+      <h2>Simple, traffic-based pricing</h2>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </section>
+
+    <section class="wrapper-info">
+
+      <h4>100 k Pageviews</h4>
+      <div class="wrapper-range">
+        <input class="range" type="range" name="" id="range">
+      </div>
+      <div class="price-month">
+        <span id="price">$16.00</span><span class="mes">/month</span>
+      </div>
+      <div class="wrapper-discount">
+        <div>
+          <label for="">Monthly Billing</label>          
+          <div class="switch centerHV">
+            <input type="checkbox" id="checkbox-1"><label for="checkbox-1">Check Here</label></input>
+          </div>
+
+          </div>
         </div>
         <div>
-          <div>
-            <label for="">Monthly Billing</label>
-            <input type="radio" name="" id="">
-          </div>
-          <div>
-              <span>Yearly Billing</span>
-              <span>25% <span class="visible">discount</span></span>
-          </div>
-          <div class="line"></div>
-          <div>
-            <div><img src="./assets/images/icon-check.svg" alt=""><span>Unlimited websites</span></div>
-            <div><img src="./assets/images/icon-check.svg" alt=""><span>100% data ownership</span></div>
-            <div><img src="./assets/images/icon-check.svg" alt=""><span>Email reports</span></div>
-            
-          </div>
-          <div>
-            <button>Start my trial</button>
-          </div>
+          <span>Yearly Billing</span>
+          <span>25% <span class="visible">discount</span></span>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="line"></div>
+        <div>
+          <div><img src="./assets/images/icon-check.svg" alt=""><span>Unlimited websites</span></div>
+          <div><img src="./assets/images/icon-check.svg" alt=""><span>100% data ownership</span></div>
+          <div><img src="./assets/images/icon-check.svg" alt=""><span>Email reports</span></div>
 
         </div>
+        <div>
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </section>
 
-   
 
-  
-   
 
-  
-  
-  
 
-  
-      </section>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </div>
-    
-    
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
   </main>
 
-  
+
+
+
 </body>
+
 </html>
