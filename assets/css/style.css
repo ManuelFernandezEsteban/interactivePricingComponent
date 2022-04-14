@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  width: 100vw;
+  max-width: 1440px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -147,11 +147,26 @@ main {
 .wrapper-discount {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   color: #858fad;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 25px;
+}
+.wrapper-discount label {
+  margin-right: 10px;
+}
+.wrapper-discount .discount {
+  background-color: #ff8c66;
+  border-radius: 15px;
+  opacity: 0.5;
+  color: #ff8c66;
 }
 
-.line {
+.ventajas {
+  width: 100%;
+}
+.ventajas .line {
   border: 0.5px solid #858fad;
   opacity: 0.3;
   width: 100%;
@@ -172,8 +187,8 @@ main {
 .switch input[type=checkbox] + label {
   position: relative;
   display: inline-block;
-  width: 2.9em;
-  height: 1.6em;
+  width: 3.2em;
+  height: 1.9em;
   border-radius: 1em;
   text-indent: -9999px;
   background-color: #eee;
