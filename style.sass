@@ -58,11 +58,11 @@ main
         margin-top: 35px
     p
         color: $grayish-blue
-        font-size: 1rem
+        font-size: 0.9rem
         line-height: 1.7rem
-        margin: 0
+        margin-top: -20px
 .wrapper-info
-    height: 70vh
+    height: 75vh
     width: 90%
     border-radius: 10px    
     background-color: white
@@ -163,18 +163,34 @@ main
     display: flex
     flex-direction: row
     justify-content: center
+    align-items: center
     color: $grayish-blue
     font-size: 0.8rem
     width: 100%
     padding: 25px
     label
         margin-right: 10px 
+        
+    .yearly-discount
+        display: flex
+        justify-content: center
+        align-content: center
     .discount
-        background-color: $light-red
-        border-radius: 15px
-        opacity: .5
-        color: $light-red
-
+        background-color: $light-grayish-red
+        border-radius: 15px        
+        margin-left: 5px 
+        min-width: 45px
+        text-align: center
+        display: flex
+        justify-content: center
+        min-height: 20px
+        
+        span        
+            color: $light-red 
+            align-self: center
+            font-size: 0.7rem
+            font-weight: 800
+        
 .ventajas
     width: 100%
 
@@ -182,6 +198,33 @@ main
         border: 0.5px solid $grayish-blue
         opacity: 0.3
         width: 100%
+    .wrapper-ventajas
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 30px
+        div
+            color: $grayish-blue
+            margin-top: 10px
+            font-size: 0.9rem
+            img
+                margin-right: 20px
+    .wrapper-button
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .btn
+            align-self: center
+            border: none
+            width: 200px
+            padding: 15px
+            border-radius: 30px
+            background-color: $dark-desaturated-blue
+            color: $light-grayish-blue
+            font-weight: 600
+            cursor: pointer
+
+                
 .visible
     display: none
 
