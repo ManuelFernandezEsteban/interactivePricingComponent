@@ -25,6 +25,9 @@ $dark-desaturated-blue: hsl(227, 35%, 25%)
 
 $font-family: 'Manrope'
 
+$tablet:768px
+$desktop:1200px
+
 body    
     box-sizing: border-box
     margin: 0
@@ -51,16 +54,33 @@ main
     flex-direction: column
     align-items: center    
     height: 20vh
-    width: 90%    
+    width: 90% 
+    @media (min-width: $tablet)
+        width: 60%  
+    @media (min-width: $desktop)
+         width: 40%
     h2
         color: $dark-desaturated-blue
         font-size: 1.4rem
         margin-top: 35px
-    p
-        color: $grayish-blue
-        font-size: 0.9rem
-        line-height: 1.7rem
-        margin-top: -20px
+        @media (min-width: $tablet)
+            font-size: 1.6rem
+        @media (min-width: $desktop)
+            font-size: 2rem
+    .wrapper-p
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center      
+        @media (min-width: $tablet)
+            flex-direction: row
+            font-size: 1.1rem
+        p
+            color: $grayish-blue
+            font-size: 0.9rem
+            line-height: 1.7rem
+            margin-top: -10px
+            text-align: center
 .wrapper-info
     height: 75vh
     width: 90%
@@ -72,22 +92,50 @@ main
     flex-direction: column
     align-items: center
     justify-content: flex-start
+    @media (min-width: $tablet)
+        width: 60% 
+        height: 50vh
+        
+    @media (min-width: $desktop)
+        width: 40%
+        
+    .wrapper-sup
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        width: 100%
+        @media (min-width: $tablet)
+            flex-wrap: wrap
+            flex-direction: row
+            margin-top: 50px
+            
     h4
         text-transform: uppercase
         color: $grayish-blue
         font-size: 1.1rem
         letter-spacing: 0.2rem
         margin-top: 50px
+        @media (min-width: $tablet)
+            align-self: center         
+            order: 0
+            margin:0px
 
     .wrapper-range
         width: 100%
         text-align: center
         margin-top: 20px
+        @media (min-width: $tablet)
+            order: 2
+
         
     input[type=range]
         -webkit-appearance: none
         width: 80%
         background-color: transparent
+        @media (min-width: $tablet)
+            order: 0
 
     input[type=range]::-webkit-slider-thumb 
         -webkit-appearance: none        
@@ -152,6 +200,9 @@ main
     margin-top: 40px
     display: flex
     align-items: center
+    @media (min-width: $tablet)
+        align-self: center
+        margin-top: 0px
     #price
         color: $dark-desaturated-blue
         font-weight: 800
@@ -168,6 +219,8 @@ main
     font-size: 0.8rem
     width: 100%
     padding: 25px
+    @media (min-width: $tablet)
+        margin-top: 30px
     label
         margin-right: 10px 
         
@@ -193,26 +246,43 @@ main
         
 .ventajas
     width: 100%
-
+    
     .line
         border: 0.5px solid $grayish-blue
         opacity: 0.3
         width: 100%
+        @media (min-width: $tablet)
+            margin-top: 30px
     .wrapper-ventajas
         display: flex
         flex-direction: column
         align-items: center
-        padding: 30px
-        div
+        padding: 30px        
+        @media (min-width: $tablet)
+            flex-direction: row
+            padding: 0px
+            margin-top: 30px
+        .wrapper-div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            flex: 1
             color: $grayish-blue
             margin-top: 10px
             font-size: 0.9rem
+            @media (min-width: $tablet)
+                align-items: flex-start
             img
                 margin-right: 20px
     .wrapper-button
         display: flex
         flex-direction: column
         justify-content: center
+        width: 50% 
+        margin-top: 40px    
+        @media (min-width: $tablet)
+            margin: 0px   
         .btn
             align-self: center
             border: none
@@ -227,6 +297,8 @@ main
                 
 .visible
     display: none
+    @media (min-width: $tablet)
+        display: block
 
 $color__active: $soft-cyan
 $color__inactive: #eee
