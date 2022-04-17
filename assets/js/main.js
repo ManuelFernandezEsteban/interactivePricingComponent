@@ -6,6 +6,7 @@ let position = 0;
 const price = document.getElementById('price');
 const pageView = document.getElementById('pageView');
 const discount = document.getElementById('checkbox-1');
+const range = document.getElementById('range');
 
 const ponerPrecio = (cadena) => {
     pageView.innerText = '';
@@ -13,10 +14,6 @@ const ponerPrecio = (cadena) => {
     price.innerText = '';
     price.innerText = precio
 }
-
-discount.addEventListener('change', () => {
-    ponerPrecio(pgv[position], calcularPrecio());
-})
 
 const calcularPrecio = () => {
     
@@ -28,10 +25,7 @@ const calcularPrecio = () => {
     }
     return precio;
 }
-
-const range = document.getElementById('range');
-range.addEventListener('input', () => {
-
+const manejador = ()=>{
     position = parseInt(range.value);    
     switch (range.value) {
         case '0':            
@@ -54,12 +48,16 @@ range.addEventListener('input', () => {
             break;
     }
 
-})
-
-
-
+}
 
 const init = ()=>{
     position=2;
     ponerPrecio(pgv[position], calcularPrecio());
 }
+
+discount.addEventListener('change', () => {
+    ponerPrecio(pgv[position], calcularPrecio());
+})
+range.addEventListener('change',manejador);
+range.addEventListener('input', manejador);
+
