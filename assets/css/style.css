@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  max-width: 1440px;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,11 @@ main {
   justify-content: flex-start;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
+}
+@media (min-width: 1200px) {
+  main {
+    background-size: contain;
+  }
 }
 
 .wrapper-head {
@@ -120,9 +125,10 @@ main {
 }
 @media (min-width: 768px) {
   .wrapper-info h4 {
-    align-self: center;
-    order: 0;
     margin: 0px;
+    margin-right: 100px;
+    font-size: 1rem;
+    letter-spacing: 0rem;
   }
 }
 .wrapper-info .wrapper-range {
@@ -257,6 +263,12 @@ main {
   display: flex;
   justify-content: center;
   min-height: 20px;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .wrapper-discount .discount {
+    width: 95px;
+  }
 }
 .wrapper-discount .discount span {
   color: #ff8c66;
@@ -304,6 +316,7 @@ main {
 @media (min-width: 768px) {
   .ventajas .wrapper-ventajas .wrapper-div {
     align-items: flex-start;
+    margin-left: 40px;
   }
 }
 .ventajas .wrapper-ventajas .wrapper-div img {
@@ -324,7 +337,7 @@ main {
 .ventajas .wrapper-button .btn {
   align-self: center;
   border: none;
-  width: 200px;
+  width: 150px;
   padding: 15px;
   border-radius: 30px;
   background-color: #293356;
