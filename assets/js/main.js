@@ -12,7 +12,7 @@ const ponerPrecio = (cadena) => {
     pageView.innerText = '';
     pageView.innerText = cadena;
     price.innerText = '';
-    price.innerText = precio
+    price.innerText = cadena
 }
 
 const calcularPrecio = () => {
