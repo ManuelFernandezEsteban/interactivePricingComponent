@@ -1,6 +1,6 @@
 const pgv = ['10 k', '50 k', '100 k', '500 k', '1 m'];
-const prices = [8, 12, 16, 24, 36];
-const pricesDiscount = [6, 9, 12, 18, 27];
+const prices = [8.00, 12.00, 16.00, 24.00, 36.00];
+const pricesDiscount = [6.00, 9.00, 12.00, 18.00, 27.00];
 let position = 0;
 
 const price = document.getElementById('price');
